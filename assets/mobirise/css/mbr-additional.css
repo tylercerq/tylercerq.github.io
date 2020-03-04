@@ -779,3 +779,20 @@ section.lazy-placeholder:after {
   transition: 0.2s background ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
+.cid-rSiY9LfSRd {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/img-4297.jpeg");
+}
+.cid-rSiY9LfSRd .mbr-section-subtitle {
+  color: #cccccc;
+}
+.cid-rSiYOOIvbR {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-rSiYOOIvbR .mbr-text,
+.cid-rSiYOOIvbR blockquote {
+  color: #767676;
+}
