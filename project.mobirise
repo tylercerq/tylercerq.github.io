@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Resume Site",
-    "currentPage": "index.html",
+    "currentPage": "about.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -233,7 +233,7 @@
               "background-image": "url(@bg-value)"
             },
             ".mbr-section-subtitle": {
-              "color": "#cccccc"
+              "color": "#efefef"
             }
           },
           "_name": "content5",
