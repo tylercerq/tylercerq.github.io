@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>007 Museum</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<!--
+Hi lol
+-->
+<body>
+	<div id="fade">
+	</div>
+	<header>
+		<div id="logo-row">
+			<div id="ticket-box">
+				<a href="hours.html">Buy Tickets</a>
+			</div>
+			<div id="img-box">
+				<a href="index.html"><img src="images/007_white_museum_logo.png" alt="007 logo"></a>
+			</div>
+			<div id="right-box">
+				<div id="minipad"></div>
+				<a href="https://www.youtube.com/user/PEAB007" target="_blank">	
+					<img src="images/iconfinder_youtube_online_social_media_tube_734362.png" alt=""></a>
+				<a href="https://twitter.com/007museum" target="_blank">
+					<img src="images/iconfinder_twitter_online_social_media_734367.png" alt=""></a>
+				<a href="https://www.instagram.com/jamesbondmuseum/" target="_blank">
+					<img src="images/iconfinder_instagram_online_social_media_photo_734395.png" alt=""></a>
+				<a href="https://www.facebook.com/bondnybro/" target="_blank">
+					<img src="images/iconfinder_online_social_media_facebook_734386.png" alt=""></a>
+			</div>
+		</div>
+
+<!-- 
+Nav Bar Starts Here
+For reference, items w/o dropdown look like <li><a href="#home">Home</a></li>
+-->
+<nav>
+			<ul>
+  				<li class="dropdown">
+    				<a href="hours.html" class="dropbtn">Visit</a>
+   					<div class="dropdown-content">
+      					<a href="hours.html">Hours/Admission</a>
+     					<a href="location.html">Location</a>
+      					<a class="inactive-drop" href="javascript:void(0)">Museum Map</a>
+						<a class="inactive-drop" href="javascript:void(0)">Dining Options</a>
+					</div>
+				</li>
+				<li><p>&#9679;</p></li>
+  				<li class="dropdown">
+    				<a href="exhibitions.html" class="dropbtn">Exhibitions</a>
+   					<div class="dropdown-content">
+      					<a class="inactive-drop" href="javascript:void(0)">Current</a>
+     					<a class="inactive-drop" href="javascript:void(0)">Upcoming</a>
+					</div>
+				</li>
+				<li><p>&#9679;</p></li>
+  				<li class="dropdown inactive">
+    				<a href="javascript:void(0)" class="dropbtn">Events</a>
+   					<div class="dropdown-content">
+      					<a class="inactive-drop" href="javascript:void(0)">Tours</a>
+     					<a class="inactive-drop" href="javascript:void(0)">Classes</a>
+      					<a class="inactive-drop" href="javascript:void(0)">Event Schedule</a>
+   					</div>
+  				</li>
+				<li><p>&#9679;</p></li>
+				<li><a href="collection.html">Collection</a></li>
+				<li><p>&#9679;</p></li>
+				<li class="dropdown inactive">
+    				<a href="javascript:void(0)" class="dropbtn">Support</a>
+   					<div class="dropdown-content">
+      					<a class="inactive-drop" href="javascript:void(0)">Membership</a>
+     					<a class="inactive-drop" href="javascript:void(0)">Donate</a>
+					</div>
+				</li>
+				<li><p>&#9679;</p></li>
+				<li class="dropdown inactive">
+    				<a href="javascript:void(0)" class="dropbtn">Store</a>
+   					<div class="dropdown-content">
+      					<a class="inactive-drop" href="javascript:void(0)">Shop Online</a>
+     					<a class="inactive-drop" href="javascript:void(0)">Store Locations</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<!--
+Nav bar ends here
+Slideshow begins
+Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).
+-->	
+<div id="plussizedheaderpad"></div>
+<div class="w3-content w3-display-container" style="margin: auto;padding:0;width:100%;">
+
+	<div class="w3-display-container mySlides" style="margin: auto;width:100%;">
+		<a href="javascript:void(0)"><img src="images/slide3-w.png" style="width:100%;margin: auto;" alt="Alps"></a>
+ 			<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			The James Bond Car Collection
+  			</div>
+		</div>
+
+	<div class="w3-display-container mySlides">
+		<a href="javascript:void(0)"><img src="images/slide1-w.png" style="width:100%" alt="mountains"></a>
+  		<div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+			Our Entire Vehicle Collection
+  		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<a href="javascript:void(0)"><img src="images/slide2-w.png" style="width:100%" alt="Lights"></a>
+  		<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+			The History Behind Classic Bond Scenes
+  		</div>
+	</div>
+	
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+	
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+	<main>
+		<div class="widebox">
+			<h1>The World's Only James Bond Museum</h1>
+			<br>
+			<p>The only museum of it's type, the James Bond 007 Museum is the #1 place for classic James Bond props, memorabilia, and history.</p>
+			<br>
+			<p>Our collection is constantly growing and changing, so be sure to check out the current collection and visit our exhibitions.</p>
+		</div>
+		<div class="minimap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2188.1696986705037!2d15.889736416566963!3d56.74005138082886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4657b6b78aaae085%3A0xb561fc0e0f9ed847!2sJames+Bond+007+Museum+Exhibition!5e0!3m2!1sen!2sus!4v1556567027223!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen text-align:center></iframe>
+		</div>
+	</main>
+	
+	<footer>
+		<p>&copy; 2019 007 Museum. All rights reserved.</p>
+	</footer>
+	
+
+</body>
+</html>

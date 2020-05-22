@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: auto;
+	background-color: #2B2B32;
+}
+
+@keyframes intro {
+	0% {background-color: black; width: 100%;
+	height: 200%;}
+	33.33% {background-color: black; width: 100%;
+	height: 200%;}
+	99% {background-color: transparent; width: 100%;
+	height: 200%;}
+  100% {background-color: transparent; width: 0%; height: 0%}
+}
+
+#fade {
+	position: absolute;
+	z-index: 3;
+	background-color: transparent;
+	animation-name: intro;
+	animation-duration: 1s;
+	pointer-events: none;
+}
+
+@keyframes radintro {
+	0% {background-image: radial-gradient(circle, black, black); width: 100%;
+	height: 200%;}
+	20% {background-image: radial-gradient(circle, black, black); width: 100%;
+	height: 200%;}
+	99% {background-image: radial-gradient(circle, rgba(0,0,0,0), black); width: 100%;
+	height: 200%;}
+  100% {background-color: transparent; width: 0%; height: 0%}
+}
+
+#radfade {
+	position: absolute;
+	z-index: 2;
+	background-color: transparent;
+	animation-name: radintro;
+	animation-duration: 10s;
+	pointer-events: none;
+}
+
+header {
+	margin: auto;
+	background-color: black;
+	width: 100%;
+	height: 104px;
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+header img {
+	margin: 12px 0px 3px 0px;
+	height: 50px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+header img:hover {
+	opacity: 0.7;
+}
+
+header h1 {
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+
+
+#logo-row {
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+	height: 65px;
+}
+
+#ticket-box {
+	margin: auto;
+	float: left;
+	width: 33.33%;
+	
+}
+
+#ticket-box a {
+	font-size: 8pt;
+	padding: 6px;
+	margin: 0 0 0 3%;
+	color: white;
+	outline:thin;
+	outline-color: white;
+	outline-style: solid;
+	text-decoration: none;
+}
+
+#ticket-box a:hover {
+	text-decoration: underline;
+}
+
+#img-box {
+	margin: auto;
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	
+}
+
+#right-box {
+	margin: auto;
+	float: left;
+	width: 33.33%;
+	padding: 0px;
+	
+}
+
+#right-box img {
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin: 20px 0px 0 5px;
+	
+}
+
+#minipad {
+	float: right;
+	width: 3%;
+	height: 50px;
+
+}
+
+nav {
+	clear: both;
+	min-width: 910px;
+	margin: auto auto 20px auto;
+	text-align: center;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  z-index: 2;
+}
+
+/* W3 Navigation menu */
+
+nav ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+
+}
+
+nav li {
+  display: inline-block;
+	
+}
+
+nav li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+	margin: auto;
+  text-decoration: none;
+	transition: 0.3s;
+	
+}
+
+.inactive a {
+	color: #A0A0A0;
+}
+
+
+nav li p {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+	margin: auto;
+  text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+nav li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	transition: 0.3s;
+}
+
+.dropdown-content .inactive-drop {
+	color: #A0A0A0;
+}
+
+.dropdown-content a:hover {background-color: #D0D0D0;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#headerpad {
+	width: 100%;
+	height: 100px;
+}
+
+#plussizedheaderpad {
+	width: 100%;
+	height: 120px;
+}
+
+/* end of nav menu */
+
+main {
+	height: 1000px;
+	max-width: 1000px;
+	padding: 0px;
+	margin: 20px auto auto auto;
+	text-align: center;
+}
+
+.topimage {
+	width: 98%;
+	background-color: #f9f9f9;	
+	margin: 0px 1% 20px 1%;	
+	padding: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.topimage img {
+	width: 100%;
+}
+
+.box {	
+	width: 31.33%;
+	height: 400px;	
+	background-color: #f9f9f9;	
+	margin: 0px 1% 0% 1%;	
+	padding: 10px 20px 10px 20px;
+	float: left;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: left;
+}
+
+.box h1 {
+	margin: 0;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-weight: bold;
+}
+
+.box p {
+	margin: 0px 2px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.mapbox {	
+	width: 64.66%;
+	height: 400px;	
+	background-color: #f9f9f9;	
+	margin: 0px 1% 0% 1%;	
+	padding: 0px;
+	float: left;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: left;
+}
+
+.minimap {
+	width: 31.33%;
+	height: 300px;	
+	background-color: #f9f9f9;	
+	margin: 0px 1% 0% 1%;	
+	padding: 0px;
+	float: left;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: left;
+}
+
+.widebox {
+	width: 64.66%;
+	min-height: 300px;	
+	background-color: #f9f9f9;	
+	margin: 0px 1% 0% 1%;	
+	padding: 10px 20px 10px 20px;
+	float: left;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: left;
+}
+
+.widebox h1 {
+	margin: 0;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-weight: bold;
+}
+
+.widebox p {
+	margin: 0px 2px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.widebox iframe {
+	margin: auto;
+	text-align: center;
+}
+
+.halfbox {	
+	width: 48%;	
+	max-height: 600px;
+	background-color: #f9f9f9;	
+	margin: 0px 1% 0% 1%;	
+	padding: 0;
+	float: left;
+	box-shadow: 0px 70px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: left;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+.halfbox:hover {
+	opacity: 1;
+}
+
+.halfbox img { 
+	max-width: 100%;
+	max-height: 600px;
+}
+
+.halfbox h1 {
+	margin: 0;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+}
+
+.halfbox p {
+	margin: 0px 2px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+}
+
+footer {
+	margin: 0;
+	text-align: center;
+	padding: 0px;
+	font-size: 8pt;
+}
+
+footer p {
+	margin: auto;
+	padding: 20px;
+	color: lightslategray;
+}
+
+/*Next are the slideshow styles*/
+
+.mySlides {
+	display:none;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 0;
+}
