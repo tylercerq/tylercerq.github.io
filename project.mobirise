@@ -49,14 +49,16 @@
     "favicon": "@PROJECT_PATH@/assets/images/apple-icon-128x128.png",
     "imageResize": true,
     "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://tylercerq.github.io/",
     "cookiesAlert": false,
     "gdpr": false,
     "uniqCompNum": 132,
     "versionPublish": "4.12.2",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-167821946-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-167821946-1');\n</script>"
   },
   "pages": {
     "index.html": {
