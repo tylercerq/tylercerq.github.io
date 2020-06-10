@@ -2507,27 +2507,6 @@ section.lazy-placeholder:after {
   color: #000000;
   text-align: center;
 }
-.cid-s1wZeC48gz {
-  background: #ffffff;
-  padding-top: 0px;
-  padding-bottom: 45px;
-}
-.cid-s1wZeC48gz .image-block {
-  margin: auto;
-}
-.cid-s1wZeC48gz figcaption {
-  position: relative;
-}
-.cid-s1wZeC48gz figcaption div {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .cid-s1wZeC48gz .image-block {
-    width: 100% !important;
-  }
-}
 .cid-rVr3r2RCfe {
   padding-top: 45px;
   padding-bottom: 45px;
