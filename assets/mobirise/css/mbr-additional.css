@@ -2605,34 +2605,32 @@ section.lazy-placeholder:after {
 .cid-rVr3r11CQB H1 {
   color: #ffffff;
 }
-.cid-rZDV1aYPvg {
+.cid-sfIveGrqIT {
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
-@media (min-width: 992px) {
-  .cid-rZDV1aYPvg .mbr-figure {
-    padding-right: 4rem;
-  }
+.cid-sfIveGrqIT h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: left;
 }
-@media (max-width: 991px) {
-  .cid-rZDV1aYPvg .mbr-figure {
-    padding-bottom: 3rem;
-  }
+.cid-sfIveGrqIT p {
+  color: #767676;
+  text-align: left;
 }
-@media (max-width: 767px) {
-  .cid-rZDV1aYPvg .mbr-text {
-    text-align: center;
-  }
+.cid-sfIveGrqIT .card-box {
+  padding-top: 2rem;
 }
-.cid-rZDV1aYPvg H1 {
-  color: #000000;
+.cid-sfIveGrqIT .card-wrapper {
+  height: 100%;
+}
+.cid-sfIveGrqIT .card-title {
   text-align: center;
 }
-.cid-rZDV1aYPvg .mbr-text,
-.cid-rZDV1aYPvg .mbr-section-btn {
-  color: #000000;
+.cid-sfIveGrqIT P {
   text-align: center;
+  color: #000000;
 }
 .cid-rVr3r1VUq6 {
   padding-top: 45px;
